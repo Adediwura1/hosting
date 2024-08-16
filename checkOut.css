@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primary-color :#7C7C7C;
+     --secondary-color : #31708f;
+      --uni-color:  #161515;
+   --sucessful:#4F8A10;
+    --dark-color : #161619;
+    --background:#fae8d3;
+    --mainColor:#e65b56;
+    --secondBackground:#fffcf9;
+    --swiper-theme-color:#e65b56;
+  } 
+  
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d35555;
+}
+h1{
+    color: #161619;
+    background-color: #d35555;
+    height: 3.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: var(--secondBackground);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header{
+    font-size: 1.5rem;
+    color: var(--mainColor);
+    font-weight: 500;
+    text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 10px;
+}
+.input-box label{
+    color: var(--dark-color);
+}
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid var(--uni-color);
+    border-radius: 6px;
+    padding: 0 15px;
+}
+input{
+    outline: none;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.gender input{
+    accent-color: rgb(43, 43, 43);
+
+}
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+.gender label{
+    color: #707070;
+}
+.address :where(input, .select-box){
+    margin-top: 10px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+option{
+    background-color: #da3030b0;
+    color: black;
+}
+
+.form button{
+    height: 45px;
+    width: 100%;
+    background-color: var(--mainColor);
+    color: #1a1919;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition:  0.7s ease;
+    border-radius: 6px;
+}
+.form button:hover{
+   background-color: transparent;
+   border: 2px solid var(--mainColor);
+   color: var(--mainColor);
+   font: 900;
+}

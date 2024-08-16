@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formBox">
+            <form name="formFill" onsubmit="return validation()">
+                <h2>Sign Up</h2>
+                <p id="result"></p>
+                <div class="inputBox">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="Username" id="registerusername" placeholder="Username">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="Email" id="registeremail" placeholder="Input Email">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="Password" id="registerpassword" placeholder="Input Password" >
+                </div>
+
+                <div class="inputBox">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="CPassword" id="registerconfirmPW" placeholder="Confirm Password">
+                </div>
+                <div class="Sbutton">
+                    <input type="submit" value="Sign Up" class="Sbtn">
+                </div>
+
+                <div class="group">
+                    <span><a href="password.html">Forgot Password?</a></span>
+                    <span><a href="login.html">Login</a></span>
+
+                </div>
+            </form>
+        </div>
+        
+        <div class="popUp" id="popup">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Thank You!</h2>
+            <p>Your Sign Up Was Successfully</p>
+            <a href="login.html"><button>OK</button></a>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/d0a77a67c7.js" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+
+</body>
+</html>

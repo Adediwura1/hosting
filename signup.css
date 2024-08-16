@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to right,rgba(211, 32, 32, 0.795),rgba(12, 11, 11, 0.822),rgba(224, 26, 26, 0.822)) ;
+width: 100%;
+min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.formBox{
+position: relative;
+width: 400px;
+height: 600px;
+border: 2px solid rgba(255,255,2550.5);
+border-radius: 20px;
+backdrop-filter: blur(25px);
+display: flex;
+justify-content: center;
+align-items: center;
+animation: motion 4s infinite alternate;
+}
+
+
+@keyframes motion {
+    0%{
+      margin-left: -150px;
+    }
+
+    100%{
+        margin-left: 150px;
+    }
+  }
+  
+  .formBox:hover{
+    margin-left: 0px !important;
+    background-color: #22272296;
+
+  }
+ 
+.formBox h2{
+color: #fff;
+text-align: center;
+font-size: 32px;
+}
+
+.formBox .inputBox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.formBox .inputBox input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    padding: 0 20px 0 9px;
+    color: #fff;
+    font-size: 16px;
+}
+i{
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    right: 10px;
+
+}
+
+input::placeholder{
+    color: #fff;
+}
+.Sbtn{
+    color: #fff;
+    background: black;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 0 0 15px;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group span a{
+color: #fff;
+position: relative;
+top: 15px;
+text-decoration: none;
+font-weight: 500;
+font-size: large;
+}
+
+.group a:hover{
+    text-decoration: underline;
+}
+
+#result{
+    color:rgb(255, 0, 0);
+    font-weight: bolder;
+    position: relative;
+    top: 25px;
+}
+.popUp{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: #000;
+}
+
+
+.popUp i{
+    color: #00ff00;
+    font-size: 50px;
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    
+}
+
+.popUp button{
+    width: 100%;
+    background-color: #00ff00;
+    padding: 10px 0;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(10, 10, 10);
+}
+
+ .popUp p{
+font-size: medium;
+}
+.popUp h2{
+    margin-top: 30%;
+    padding-bottom: 8px;
+}
+.popUp a{
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 2px;
+
+}
+.openSlide{
+    top: 50px;
+    transform: translate(-50%, 30%) scale(1);
+    visibility: visible;
+}
+
+#loginResult{
+    color: red;
+    font-weight: bolder;
+    position: relative;
+    top: 25px;
+}
+
+@media screen and (max-width: 760px){    
+        @keyframes motion {
+            0%{
+              margin-left: 0;
+            }
+        
+            100%{
+                margin-left: 0px;
+            }
+          }
+}

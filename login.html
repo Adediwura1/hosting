@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="signup.css">
+
+
+</head>
+<body>
+<style>
+    .formBox h2{
+margin-top: -10rem;
+}
+</style>
+    
+    <div class="container">
+        <div class="formBox">
+            <form name="loginForm" onsubmit="return login()">
+                <h2 class="title">Login</h2>
+                <p id="loginResult"></p>
+                <div class="inputBox">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="Email" placeholder="Input Email" id="loginEmail">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="Password" placeholder="Input Password" id="loginPassword">
+                </div>
+
+                <div class="Sbutton">
+                    <input type="submit" value="Login" class="Sbtn" onclick="login()">
+                </div>
+
+                <div class="group">
+                    <span><a href="signup.html">Don't have an account?</a></span>
+                    <span><a href="password.html">Forgot Password?</a></span>
+
+                </div>
+            </form>
+        </div> 
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/d0a77a67c7.js" crossorigin="anonymous"></script>
+<script src="signup.js"></script>
+</body>
+</html>

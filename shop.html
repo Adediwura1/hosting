@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+ 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="shop.css">
+
+    <title>Shop page</title>
+</head>
+<body>
+    
+    <div class="sideBar">
+<div><i class="fa-solid fa-bars fa-lg" style="color: #0f0f0f;" id="menuBar"></i></div>
+
+
+<ul>
+    <li>
+    <a href="index.html">
+        <i class="fa-solid fa-house fa-lg" style="color: #080808;"></i>
+        <span class="navBar">HOME</span>
+    </a>
+    <span class="navTip">HOME</span>
+</li>
+
+<li>
+    <a href="shop.html">
+        <i class="fa-brands fa-shopify fa-lg" style="color: #121212;"></i>
+        <span class="navBar">SHOP</span>
+    </a>
+    <span class="navTip">SHOP</span>
+</li>
+
+
+
+<li>
+    <a href="about.html">
+        <i class="fa-solid fa-circle-info fa-lg" style="color: #0f0f0f;"></i>
+<span class="navBar">ABOUT</span>
+    </a>
+    <span class="navTip">ABOUT</span>
+</li>
+
+<li>
+    <a href="contact.html">
+        <i class="fa-solid fa-address-book fa-lg" style="color: #0f0f0f;"></i>
+<span class="navBar">CONTACT</span>
+    </a>
+    <span class="navTip">CONTACT</span>
+</li>
+
+<li>
+    <a href="terms and condition.html">
+        <i class="fa-solid fa-file-contract fa-lg" style="color: #0d0d0d;"></i>
+        <span class="navBar">TERMS</span>
+    </a>
+    <span class="navTip">TERMS</span>
+</li>
+
+
+<li>
+    <a href="login.html">
+        <i class="fa-solid fa-right-to-bracket fa-lg" style="color: #1a1a1a;"></i>
+        <span class="navBar">LOGIN</span>
+    </a>
+    <span class="navTip">LOGIN</span>
+</li>
+
+
+<li>
+    <a href="adminlogin.html">
+        <i class="fa-solid fa-user fa-lg" style="color: #0d0d0d;"></i>
+        <span class="navBar">ADMIN</span>
+    </a>
+    <span class="navTip">ADMIN</span>
+</li>
+
+<li>
+    <a href="review.html">
+        <i class="fa-solid fa-pen-to-square fa-lg" style="color: #111111;" id="Cart"></i>
+        <span class="navBar">REVIEW</span>
+    </a>
+    <span class="navTip">REVIEW</span>
+</li>
+
+
+<li>
+    <!-- <a href="#"> -->
+        <div class="cartDetails">
+        <div class="shoppingBasket">
+        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #111111;" id="Cart"></i>
+        <b class="quantity">0</b>
+    </div>
+        <span class="navBar">CART</span>
+    </div>
+    <!-- </a> -->
+    <span class="navTip">CART</span>
+</li>
+
+</ul>  
+    </div>
+
+
+
+
+
+
+
+<div class="mainPage">
+    
+    <div class="HeadDiv">
+    <div  class="logoName"><h1>WEAR<strong>CULTURE</strong></h1></div>
+    <div class="Search">
+        <!-- <form action=""> -->
+            <input type="text" name="" id="inputSearch" placeholder="Search here.....">
+            <button class="searchButton">Go</button>
+        <!-- </form> -->
+    </div>
+</div>        
+    </div>
+
+    <div class="Container">
+<section>
+    <div class="title">
+        <h4>ALL PRODUCTS</h4>
+
+    </div>
+
+<!-- products div rendered on js -->
+    <div class="productDiv" id="divProduct">
+        <div class="productItem" id="ProductItem"></div>
+    </div>
+</section>
+
+
+
+<div class="cart">
+    <div>
+    <h3>CART</h3>
+    <div class="close"> <i class="fa-solid fa-xmark fa-beat fa-xl" style="color: #fffafa;"></i></div>
+</div>
+
+    <ul class="prodList"></ul>
+
+<div class="check">
+    <div class="totPrice"><small>SUBTOTAL (0 items) : </small> ₦0</div><br>
+    <div class="proceedDiv"><a href="login.html">PROCEED</a></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="row">
+    <div class="col">
+        <h4>INFORMATION</h4>
+        <a href="about.html">About US</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms and condition.html">Terms </a>
+    </div>
+
+    <div class="col">
+        <div>
+        <h4>USEFUL LINK</h4>
+        <a href="https://wa.me/+2347032312042">Customer Service</a>
+        <a href="review.html">Customer Review</a>
+        <a href="https://wa.me/+2347032312042">Online Store</a></div>
+    </div>
+
+    <div class="iconCol">
+        <a href="https://wa.me/+2347032312042" target="_blank"><i class="fa-brands fa-whatsapp fa-xl" style="color: #121212;"></i></a>
+        <a href="http://www.facebook.com/adediwura" target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #050505;"></i></a>
+        <a href="http://www.twitter.com/adedilizzy" target="_blank"><i class="fa-brands fa-twitter fa-lg" style="color: #070808;"></i></a>
+        <a href="http://www.instagram.com/filabyonifilaadooge_backupage" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #050505;"></i></a>
+        <a href="http://www.github.com/Adediwura1"><i class="fa-brands fa-github fa-lg" style="color: #0f0f0f;"></i></a>    </div>
+
+</div>
+</footer>
+
+
+
+
+
+
+</div>
+<script src="https://kit.fontawesome.com/d0a77a67c7.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js"></script>
+    <script src="glide.js"></script>
+<script src="shop.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>

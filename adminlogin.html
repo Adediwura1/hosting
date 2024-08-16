@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLogin</title>
+</head>
+<style>
+body{
+    background-image:linear-gradient(to right,rgba(211, 32, 32, 0.795),rgba(12, 11, 11, 0.822),rgba(224, 26, 26, 0.822)) ;
+width: 100%;
+min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(219, 78, 78, 0.658);
+    padding-top: 5rem;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+#username{
+    background-color: rgb(209, 169, 169);
+    margin-bottom: 1.5rem;
+    width: 15rem;
+    height: 2rem;
+    font-size: medium;
+    text-indent: 10px;
+    outline: none;
+}
+
+#password{
+    background-color: rgb(209, 169, 169);
+    margin: 0 0 1.5rem 0.2rem;
+    width: 15rem;
+    height: 2rem;
+    font-size: medium;
+    text-indent: 10px;
+    outline: none;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+button{
+    width: 6rem;
+    height: 2.5rem;
+    font-size: large;
+    background-color: rgb(209, 169, 169);
+    margin-left: 180px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: brown;
+    color: #fff;
+    border-radius: 50%;
+   
+}
+
+</style>
+<body>
+    <h1>Admin Login</h1>
+
+    <div class="container">
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+
+
+    <script>
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Replace these values with your specific username and password
+    const validUsername = 'authorized';
+    const validPassword = '12345';
+
+    if (username === validUsername && password === validPassword) {
+        // Redirect to the admin page
+        window.location.href = 'admin.html';
+    } else {
+        alert('Invalid username or password');
+    }
+});
+
+
+
+
+    </script>
+</body>
+</html>

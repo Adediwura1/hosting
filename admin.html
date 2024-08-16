@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="admin.css">
+    <!-- title -->
+    <title>Admin Page</title>
+    <!-- fonts -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+  <!-- box-icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- swiper js -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <section class="menu-bar" id="menu">
+       
+        <!-- <div class="logo">
+            <img src="./assets/LOGO.png" alt="LOGO">
+        </div> -->
+        <div id="items">
+            <li id="Nav_Dashboard" ><i class="bx bx-pie-chart-alt"></i>Dashboard</li>
+            <li id="Nav_Order_list"><i class="bx bx-rotate-left"></i>Orders</li>
+            <li id="Nav_add_product"><i class="bx bx-cart-alt"></i>Add Product</li>
+            <li id="Nav_customers"><i class="bx bx-edit"></i>Customers Review</li>
+            <li id="Home"><i class="bx bx-home"></i><a href="shop.html">Shop</a></li>
+            <li id="Profile"> <i class="bx bx-user-pin"></i><a href="#">Profile</a></li>
+            <li id="Nav-logout"><i class="bx bx-log-out-circle"></i><a href="index.html">Log out</a></li>
+        </div>
+    </section>
+<section class="interface">
+    <div >
+    <div class="navigation" id="navigation">
+        <div class="n1">
+            <div class="menu-btn" id="menu-btn"><i class="bx bx-menu"></i></div>
+            <!-- <div class="search">
+                <i class="bx bx-search"></i>
+                <input type="text" placeholder="search">
+            </div> -->
+        </div>
+        <div class="profile">
+            <!-- <i class="bx bx-bell"></i> -->
+            <img id="resultPicture" class="user-pics" onclick="toggleMenu()">
+            <p><span id="usernamespan"></span></p>
+            <div class="user-name-wrap" id="Menu-Id">
+                <div class="user-menu" id="resultSection">
+                    <h2>Profile</h2>
+                    <hr>
+                           <!-- <p><strong>Picture:</strong> <img id="resultPicture" src="" alt="Profile Picture" style="max-width: 100px;"></p> -->
+                           <p><strong>Name:</strong> <span id="resultName"></span></p>
+                           <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+                           <p><strong>Phone Number:</strong> <span id="resultPhone"></span></p>
+                           <p><strong>Address:</strong> <span id="resultAddress"></span></p>
+                           <button id="editButton">Edit Profile</button>
+
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+            
+         
+        </div>
+        <h3 class="dash">Dashboard</h3>
+        <div class="values">
+            <div class="val-box">
+                <i class="bx bx-group"></i>
+                <div>
+                    <h3>0</h3>
+                    <span>Total Users</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bx bx-cart"></i>
+                <div>
+                    <h3>0</h3>
+                    <span>Total Orders</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bx bx-store-alt"></i>
+                <div>
+                    <h3>0</h3>
+                    <span>Product sell</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bx bx-package"></i>
+                <div>
+                    <h3>0</h3>
+                    <span>Total Products</span>
+                </div>
+            </div>
+        </div>
+        <div>
+        <div class="board">
+          <h2>Latest Orders
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Ref No</td>
+                        <td>Customer Name</td>
+                        <td>Status</td>
+                        <td>Item Name</td>
+                        <td>Sales Amount</td>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <!-- <img src="/assets/personal image 2.jpg" alt=""> -->
+                            <!-- <div class="people-d">
+                                <p>07032312042</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>ADEDIWURA ELIZABETH</h5>
+                            
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Aso Ofi</p>
+                        </td> -->
+                        <!-- <td class="edit"> <a href=""> </a></td> -->
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <!-- <img src="/assets/personal image 2.jpg" alt=""> -->
+                            <!-- <div class="people-d">
+                            
+                                <p>08162222942</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>CHINEDU EZEAGU</h5>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Hand Beads</p>
+                        </td> -->
+                        <!-- <td class="edit"><a href="#">Edit</a></td> -->
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <!-- <img src="/assets/personal image 2.jpg" alt=""> -->
+                            <!-- <div class="people-d">
+                                
+                                <p>09068911630</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>BAKARE OLALEKAN</h5>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Neck Beads</p>
+                        </td> -->
+                       <!-- <td class="edit"><a href="#">Edit</a></td> -->
+                </tr>
+                <tr>
+                    <td class="people">
+                        <!-- <img src="/assets/personal image 2.jpg" alt=""> -->
+                        <!-- <div class="people-d">
+
+                        <p>08051332202</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>DADA OLUWASEGUN</h5>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Hausa Fabrics</p>
+                    </td> -->
+                    <!-- <td class="edit"><a href="#">Edit</a></td> -->
+                </tr>
+                <tr>
+                    <td class="people">
+                        <!-- <img src="/assets/personal image 2.jpg" alt=""> -->
+                        <!-- <div class="people-d">
+                    
+                            <p>08167865209</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>OLABODE ADEWUYI</h5>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Isi Agu</p>
+                    </td> -->
+                    <!-- <td class="edit"><a href="#">Edit</a></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>  
+</section>
+
+<section class="orderConfirmation">
+    <h1>Customer Orders</h1>
+    <div id="orders"></div>
+
+</section>
+
+
+
+<section  class="product_container"> 
+<h2>Add Product</h2>
+<form id="product-form">
+    <input type="text" id="product-name" placeholder="Product Name" required>
+    <input type="number" id="product-price" placeholder="Product Price" required>
+    <input type="file" id="product-image" accept="image/*" required>
+    <input type="number" id="product-id" placeholder="Product ID" required>
+    <input type="text" id="product-category" placeholder="Product Category" required>
+    <button type="submit">Add Product</button>
+  </form>
+<div id="ProductItem"></div>
+    </section>
+
+
+
+</section>
+
+<section class="NewProductDisplay">
+    <div class="ProductDisplayContainer" id="ProductDisplay">
+        <h1>All product</h1>
+        <div class="vendorProduct" id="vendorProducts">
+
+
+        </div>
+    </div>
+</section>
+
+
+<section>
+     <div class="Review-page">
+        <h2 class="reviewTitle">Customers Review</h2>
+    <ul id="review-list">
+        <!-- <Reviews will be displayed here -->
+    </ul>
+    </div>
+</section>
+
+<section>
+    <div class="profile-body" id="profile-container">
+        <nav class="Profiling"> 
+            <div id="profileContainer">
+                <h2>Profile Page</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="picture">Picture</label>
+                        <input type="file" id="picture" name="picture" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>   
+            </div>
+
+        </nav>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" yt
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+crossorigin="anonymous"></script>
+<script src="review.js"></script>
+<script src="shop.js"></script>
+<script src="checkOut.js"></script>
+<script src="confirmation.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to right,rgba(211, 32, 32, 0.664),rgba(12, 11, 11, 0.507),rgba(224, 26, 26, 0.822)) ;
+}
+.Review-page{
+    height: 100vh;
+    margin-top: 100px;
+    /* margin-left: 400px; */
+}
+#review-form{
+    flex-direction: column;
+    background-image:linear-gradient(to right,rgba(211, 32, 32, 0.452),rgba(12, 11, 11, 0.514),rgba(224, 26, 26, 0.822)) ;
+    padding: 10px;
+     border: 1px solid #ccc;
+     margin-top: 10px;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+     gap: 20px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+h1, h2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+</style>
+
+<body>
+    <section>
+        <div class="Review-page">
+           <form id="review-form">
+               <label for="customer-name">Customer Name:</label>
+               <input type="text" id="customer-name" required>
+               <label for="review-text">Review:</label>
+               <textarea id="review-text" rows="4" required></textarea>
+               <label for="review-image">Upload your image:</label>
+               <input type="file" id="review-image" accept="image/*">
+               <button type="submit">Submit Review</button>
+           </form>
+           <h2>Customer Review Page</h2>
+           <ul id="review-list"></ul>
+       </div>
+   </div>
+   </section>
+
+   <script src="review.js"></script>
+</body>
+</html>
